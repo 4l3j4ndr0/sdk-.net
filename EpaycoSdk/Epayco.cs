@@ -405,7 +405,7 @@ namespace EpaycoSdk
         {
             BanksModel bank = new BanksModel();
             ENDPOINT = body.getQueryGetBanks(_PUBLIC_KEY);
-            string content = _request.Execute(
+            string content = _restRequest.Execute(
                 ENDPOINT, 
                 "GET",
                 _auxiliars.ConvertToBase64(_PUBLIC_KEY),
